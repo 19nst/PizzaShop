@@ -9,4 +9,15 @@ abstract  class PizzaShop(val cheesePrice:Double, val margaritaPrice:Double, val
     abstract fun makeCheese()
     abstract fun makeMargarita()
     abstract fun makeHawaiian()
+
+    fun PizzaStatistics(){
+
+        println("Cheese Pizza sold $cheeseCount")
+        println("Margarita Pizza sold $margaritaCount")
+        println("Hawaiian Pizza sold $hawaiianCount")
+
+
+        val income = cheeseCount * cheesePrice + margaritaCount * margaritaPrice + hawaiianCount * hawaiianPrice
+        println("Income: $income")
+    }
 }

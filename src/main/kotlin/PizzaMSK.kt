@@ -1,5 +1,5 @@
 class PizzaMSK(cheesePrice:Double, margaritaPrice:Double, hawaiianPrice:Double):
-    PizzaShop(cheesePrice, margaritaPrice, hawaiianPrice) {
+    PizzaShop(cheesePrice, margaritaPrice, hawaiianPrice),Drink {
 
 
     override fun makeCheese() {
@@ -23,5 +23,11 @@ class PizzaMSK(cheesePrice:Double, margaritaPrice:Double, hawaiianPrice:Double):
         hawaiianCount++
 
         println("Thank you for ordering Hawaiian pizza. Come back to us in Moscow")
+    }
+
+    override fun sellDrink() {
+
+        println("Your drink is ready")
+
     }
 }
