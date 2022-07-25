@@ -24,7 +24,9 @@ fun main() {
         }
 
 
-        whatPizza(TverPizzaShop, CurrentPizzeria)
+        whatPizza(TverPizzaShop,MoscowPizzaShop)
+
+        println("Come back to us")
     }
 }
 
@@ -37,18 +39,18 @@ private fun whatPizza(TverPizzaShop: PizzaTver, CurrentPizzeria: PizzaShop) {
 
     when (readLine()) {
         "1" -> {
-            TverPizzaShop.makeCheese()
+            CurrentPizzeria.makeCheese()
             questionAboutDrink(CurrentPizzeria)
         }
         "2" -> {
-            TverPizzaShop.makeMargarita()
+            CurrentPizzeria.makeMargarita()
             questionAboutDrink(CurrentPizzeria)
         }
         "3" -> {
-            TverPizzaShop.makeHawaiian()
+            CurrentPizzeria.makeHawaiian()
             questionAboutDrink(CurrentPizzeria)
         }
-        "0" -> TverPizzaShop.PizzaStatistics()
+        "0" -> CurrentPizzeria.PizzaStatistics()
         else -> {
             println("You entered incorrect data")
             exitProcess(0)
